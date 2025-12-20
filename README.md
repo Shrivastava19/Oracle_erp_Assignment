@@ -210,5 +210,6 @@ Found a bug? Have a suggestion? [Open an issue](../../issues) or contact the mai
 
 **Version**: 1.2  
 **Last Updated**: December 2025  
-**Author**: [Your Name]  
+**Author**: Yash Shrivastava 
 **Project Status**: ✅ Active
+
