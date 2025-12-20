@@ -226,11 +226,9 @@ Get the application running in 5 minutes:
 ## Contributing
 Contributions welcome! Please fork and submit pull requests for any improvements.
 
-## License
-MIT License - See LICENSE file for details
-
 ## Support & Issues
 Found a bug? Have a suggestion? [Open an issue](../../issues) or contact the maintainers.
+
 
 
 
