@@ -1,6 +1,24 @@
 # Mock Course Page - Oracle Fusion Lease Accounting
 
-This is a comprehensive course management system with a mock course page for "Oracle Fusion Lease Accounting - Identifying Leasing Arrangements". It includes an embedded YouTube video, user feedback collection, and a secure admin dashboard for analyzing feedback.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PHP Version](https://img.shields.io/badge/PHP-7.0%2B-blue.svg)](https://www.php.net/)
+[![MySQL Version](https://img.shields.io/badge/MySQL-5.7%2B-blue.svg)](https://www.mysql.com/)
+
+A comprehensive course management system with a mock course page for "Oracle Fusion Lease Accounting - Identifying Leasing Arrangements". It includes an embedded YouTube video, real-time user feedback collection, and a secure admin dashboard for analyzing feedback with advanced filtering and statistics.
+
+## Quick Start
+
+Get the application running in 5 minutes:
+
+```bash
+# 1. Start XAMPP (Apache & MySQL)
+# 2. Create database: course_feedback
+# 3. Import setup.sql
+# 4. Copy files to C:\xampp\htdocs\assignment\
+# 5. Open http://localhost/assignment/
+```
+
+**Admin Credentials:** `admin` / `admin123`
 
 ## Features
 
@@ -26,76 +44,65 @@ This is a comprehensive course management system with a mock course page for "Or
 ## Setup Instructions
 
 ### Prerequisites
-- XAMPP installed (https://www.apachefriends.org/)
+- XAMPP installed ([Download](https://www.apachefriends.org/))
 - Windows, macOS, or Linux
+- 500MB free disk space
+- Modern web browser
 
-### Step 1: Download and Install XAMPP
-1. Download XAMPP from https://www.apachefriends.org/download.html
-2. Run the installer and follow the setup wizard
-3. Keep the default installation directory (`C:\xampp` on Windows)
-4. Ensure Apache, MySQL, and phpMyAdmin are selected during installation
+### Installation Steps
 
-### Step 2: Start XAMPP Services
-1. Open the XAMPP Control Panel (`C:\xampp\xampp-control.exe` on Windows)
-2. Click "Start" next to "Apache"
-3. Click "Start" next to "MySQL"
-4. Both should show "Running" in green
+#### 1️⃣ Install XAMPP
+- Download from [apachefriends.org](https://www.apachefriends.org/download.html)
+- Run installer with default settings
+- Select Apache, MySQL, and phpMyAdmin
 
-### Step 3: Set Up the Database
-1. Open your browser and navigate to `http://localhost/phpmyadmin`
-2. Login with:
-   - Username: `root`
-   - Password: (leave blank)
-3. Click "Databases" → Create a new database named `course_feedback`
-4. Select the `course_feedback` database
-5. Click "Import" tab → Choose `setup.sql` from your project folder → Click "Go"
+#### 2️⃣ Start Services
+- Open XAMPP Control Panel
+- Click "Start" for Apache and MySQL
+- Both should show "Running" in green
 
-### Step 4: Deploy Project Files
-1. Navigate to `C:\xampp\htdocs` on Windows (or equivalent on macOS/Linux)
-2. Create a folder named `assignment` if it doesn't exist
-3. Copy all project files into `C:\xampp\htdocs\assignment`:
-   - index.html
-   - style.css
-   - script.js
-   - feedback.php
-   - admin_login.html
-   - admin_auth.php
-   - admin_dashboard.html
-   - admin_get_feedback.php
-   - admin_logout.php
-   - admin.css
-   - admin.js
-   - setup.sql (optional)
-   - README.md (optional)
+#### 3️⃣ Set Up Database
+- Navigate to `http://localhost/phpmyadmin`
+- Login (username: `root`, password: empty)
+- Create new database: `course_feedback`
+- Click "Import" and select `setup.sql`
 
-### Step 5: Access the Application
-1. **Course Page**: Open `http://localhost/assignment/index.html`
-2. **Admin Panel**: Click "Admin Panel" link or go to `http://localhost/assignment/admin_login.html`
+#### 4️⃣ Deploy Files
+- Copy all files to `C:\xampp\htdocs\assignment\`
+- Ensure these files are present:
+  - `index.html`, `style.css`, `script.js`
+  - `feedback.php`, `setup.sql`
+  - `admin_login.html`, `admin_auth.php`
+  - `admin_dashboard.html`, `admin_get_feedback.php`
+  - `admin_logout.php`, `admin.css`, `admin.js`
+
+#### 5️⃣ Access the Application
+#### 5️⃣ Access the Application
+- **Course Page**: http://localhost/assignment/index.html
+- **Admin Panel**: http://localhost/assignment/admin_login.html
 
 ## Usage
 
-### User Workflow
+### 👤 User Workflow
 1. Navigate to the course page
 2. Watch the embedded YouTube video
-3. When the video ends, a feedback popup appears automatically
-4. Fill in your name, email, rating (1-5), and feedback
-5. Click "Submit Feedback" to save your response
+3. When video ends, feedback popup appears
+4. Fill in name, email, rating, and comments
+5. Click "Submit Feedback"
 
-### Admin Workflow
-1. Access the Admin Panel via the "Admin Panel" link on the course page
-2. **Login Credentials:**
-   - Username: `admin`
-   - Password: `admin123`
-   - Or Username: `root`, Password: `root`
-3. View the dashboard with:
-   - **Statistics Cards**: Total feedback, average rating, median rating, and 5-star feedback count
-   - **Feedback Table**: All user submissions with name, email, rating, and comments
-4. **Apply Filters**:
-   - Filter by rating (1-5 stars)
-   - Filter by date range (from and to dates)
-   - Click "Apply Filters" to view filtered results
-   - Click "Reset" to clear all filters
-5. **Logout**: Click the "Logout" button to end the admin session
+### 🔐 Admin Workflow
+1. Access Admin Panel via the link
+2. Login with credentials:
+   - Username: `admin` | Password: `admin123`
+   - Or: `root` | `root`
+3. View dashboard with statistics:
+   - Total feedback count
+   - Average rating
+   - Median rating
+   - 5-star feedback count
+4. Review feedback table with all submissions
+5. Filter by rating (1-5 stars) or date range
+6. Click "Logout" to end session
 
 ## Database Schema
 
@@ -149,40 +156,59 @@ This is a comprehensive course management system with a mock course page for "Or
 
 ## Troubleshooting
 
-### Database Connection Failed
+### ❌ Database Connection Failed
 - Ensure MySQL service is running in XAMPP Control Panel
-- Check database credentials in `feedback.php` and `admin_*.php` files
-- Default: username `root`, password empty (for XAMPP)
+- Check database credentials in `feedback.php`
+- Default: username `root`, password empty
 
-### Popup Doesn't Appear
-- Open browser DevTools (F12) → Console to check for errors
-- Ensure JavaScript is enabled
-- Check video player is working
+### ❌ Popup Doesn't Appear
+- Open browser DevTools (F12) → Console for errors
+- Enable JavaScript in browser settings
+- Verify video player is working
 
-### Admin Login Fails
-- Verify credentials: `admin` / `admin123` or `root` / `root`
-- Check admin_users table exists and has data in phpMyAdmin
-- Clear browser cookies and try again
+### ❌ Admin Login Fails
+- Use credentials: `admin` / `admin123`
+- Check `admin_users` table exists in phpMyAdmin
+- Clear browser cookies and retry
 
-### Files Not Found
-- Ensure files are in `C:\xampp\htdocs\assignment\` (or equivalent)
+### ❌ Files Not Found (404 Error)
+- Verify files are in `C:\xampp\htdocs\assignment\`
 - Check URL: `http://localhost/assignment/index.html`
+- Restart Apache service
 
 ## Performance Optimization
-- Consider indexing the `submitted_at` and `rating` columns for large datasets
-- Implement pagination for feedback table when data exceeds 1000 records
+- Index `submitted_at` and `rating` columns for large datasets
+- Implement pagination when feedback exceeds 1000 records
+- Cache frequently accessed queries
 
 ## Future Enhancements
 - Export feedback to CSV/Excel
 - Email notifications for new feedback
 - Advanced analytics and charts
-- Multi-user admin accounts with role-based access
-- Feedback editing/deletion capabilities
-- Automated email responses to feedback submitters
+- Multi-user admin accounts with roles
+- Feedback editing/deletion
+- Automated email responses
+- Two-factor authentication
 
-## Support
-For issues or questions, ensure all XAMPP services are running and database is properly configured.
+## Security Features
+- ✅ Session-based authentication
+- ✅ Bcrypt password hashing
+- ✅ Prepared statements (SQL injection prevention)
+- ✅ HTML escaping (XSS prevention)
+- ✅ CSRF protection
+
+## Contributing
+Contributions welcome! Please fork and submit pull requests for any improvements.
+
+## License
+MIT License - See LICENSE file for details
+
+## Support & Issues
+Found a bug? Have a suggestion? [Open an issue](../../issues) or contact the maintainers.
 
 ---
-**Version**: 1.1  
-**Last Updated**: December 2025
+
+**Version**: 1.2  
+**Last Updated**: December 2025  
+**Author**: [Your Name]  
+**Project Status**: ✅ Active
