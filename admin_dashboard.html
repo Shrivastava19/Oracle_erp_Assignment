@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Course Feedback</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Header -->
+        <header class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <div class="header-actions">
+                <span id="admin-username" class="admin-name"></span>
+                <a href="admin_logout.php" class="btn-logout">Logout</a>
+            </div>
+        </header>
+
+        <!-- Statistics Cards -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <h3>Total Feedback</h3>
+                <p class="stat-value" id="total-feedback">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Average Rating</h3>
+                <p class="stat-value" id="avg-rating">0.0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Median Rating</h3>
+                <p class="stat-value" id="median-rating">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>5-Star Feedback</h3>
+                <p class="stat-value" id="five-star-count">0</p>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <h2>Filters</h2>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="filter-rating">Rating:</label>
+                    <select id="filter-rating">
+                        <option value="">All Ratings</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-date-from">From Date:</label>
+                    <input type="date" id="filter-date-from">
+                </div>
+                <div class="filter-group">
+                    <label for="filter-date-to">To Date:</label>
+                    <input type="date" id="filter-date-to">
+                </div>
+                <button id="apply-filters" class="btn-primary">Apply Filters</button>
+                <button id="reset-filters" class="btn-secondary">Reset</button>
+            </div>
+        </div>
+
+        <!-- Feedback Table -->
+        <div class="table-section">
+            <h2>All Feedback</h2>
+            <div class="table-wrapper">
+                <table id="feedback-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Rating</th>
+                            <th>Feedback</th>
+                            <th>Submitted At</th>
+                        </tr>
+                    </thead>
+                    <tbody id="feedback-tbody">
+                        <tr>
+                            <td colspan="6" class="no-data">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
