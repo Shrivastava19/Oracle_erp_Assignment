@@ -117,6 +117,13 @@ Get the application running in 5 minutes:
 5. Filter by rating (1-5 stars) or date range
 6. Click "Logout" to end session
 
+<img width="418" height="425" alt="image" src="https://github.com/user-attachments/assets/2795d653-5339-4471-a539-ec397f03d37b" />
+
+
+<img width="920" height="484" alt="image" src="https://github.com/user-attachments/assets/e1fd0b7e-9a09-4bff-8892-bebed109bee9" />
+
+
+
 ## Database Schema
 
 ### feedback table
@@ -224,6 +231,7 @@ MIT License - See LICENSE file for details
 
 ## Support & Issues
 Found a bug? Have a suggestion? [Open an issue](../../issues) or contact the maintainers.
+
 
 
 
