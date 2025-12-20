@@ -55,6 +55,8 @@ Get the application running in 5 minutes:
 - Download from [apachefriends.org](https://www.apachefriends.org/download.html)
 - Run installer with default settings
 - Select Apache, MySQL, and phpMyAdmin
+  <img width="1016" height="646" alt="Screenshot 2025-12-20 095027" src="https://github.com/user-attachments/assets/8e3ed80e-162f-4726-b7f0-7f8c806d405d" />
+
 
 #### 2️⃣ Start Services
 - Open XAMPP Control Panel
@@ -205,6 +207,7 @@ MIT License - See LICENSE file for details
 
 ## Support & Issues
 Found a bug? Have a suggestion? [Open an issue](../../issues) or contact the maintainers.
+
 
 
 
