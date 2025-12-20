@@ -91,6 +91,11 @@ Get the application running in 5 minutes:
 3. When video ends, feedback popup appears
 4. Fill in name, email, rating, and comments
 5. Click "Submit Feedback"
+<img width="937" height="485" alt="image" src="https://github.com/user-attachments/assets/5d97253c-036b-47a2-9c3f-c2f5468e90e2" />
+<img width="463" height="502" alt="image" src="https://github.com/user-attachments/assets/ca8e628b-b07c-4e39-8bfe-c893f0192642" />
+<img width="415" height="385" alt="image" src="https://github.com/user-attachments/assets/8f20aa55-6c7d-4d36-822f-d8dff2651fb5" />
+<img width="407" height="77" alt="image" src="https://github.com/user-attachments/assets/a613d1e3-77a7-4874-b9ef-0217809edc90" />
+
 
 ### 🔐 Admin Workflow
 1. Access Admin Panel via the link
@@ -118,6 +123,9 @@ Get the application running in 5 minutes:
 | feedback | TEXT | User's feedback text |
 | submitted_at | TIMESTAMP | Submission timestamp |
 
+<img width="950" height="485" alt="image" src="https://github.com/user-attachments/assets/a0442f38-0320-480a-a312-4c9eb8c536b1" />
+
+
 ### admin_users table
 | Column | Type | Description |
 |--------|------|-------------|
@@ -125,6 +133,9 @@ Get the application running in 5 minutes:
 | username | VARCHAR(50) | Admin username |
 | password | VARCHAR(255) | Hashed password (bcrypt) |
 | created_at | TIMESTAMP | Creation timestamp |
+
+<img width="947" height="452" alt="image" src="https://github.com/user-attachments/assets/28d54e68-de30-420d-8d81-bb7dd37c943f" />
+
 
 ## Default Admin Credentials
 - **Username**: `admin` | **Password**: `admin123`
@@ -207,6 +218,7 @@ MIT License - See LICENSE file for details
 
 ## Support & Issues
 Found a bug? Have a suggestion? [Open an issue](../../issues) or contact the maintainers.
+
 
 
 
